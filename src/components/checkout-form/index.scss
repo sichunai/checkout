@@ -1,0 +1,44 @@
+.form-container {
+  margin: 24px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  font-size: 14px;
+}
+
+.delivery-container {
+  border: solid 1px #bebebe;
+  padding: 16px;
+  margin: 24px;
+}
+
+.payment-container {
+  border: solid 1px #bebebe;
+  padding: 16px;
+  margin: 24px;
+}
+
+.total-container {
+  border: solid 1px #bebebe;
+  padding: 16px;
+  margin: 24px;
+}
+
+.value-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-button {
+  background-color: #378537;
+  margin-top: 16px;
+  width: 100%;
+  height: 40px;
+  color: white;
+  border: none;
+  font-weight: 700;
+}
+
+.cancel-order-container {
+  margin: 24px 0;
+  font-weight: 700;
+}

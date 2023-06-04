@@ -18,7 +18,7 @@ const ShowItem = ({ show }) => {
         <span>Location: {location}</span>
         <span>Price: ${price}</span>
         <div>
-          <label for="tickets">Number of Tickets:</label>
+          <label for="tickets">Number of Tickets: </label>
           <select
             name="tickets"
             onChange={(e) => handleSelect(e.target.value)}
@@ -32,7 +32,11 @@ const ShowItem = ({ show }) => {
             <option value="6">6</option>
           </select>
         </div>
-        <Link to="checkout" state={{ title, price, selectedNumber }}>
+        <Link
+          to="checkout"
+          className="checkout-link"
+          state={{ price, selectedNumber }}
+        >
           Buy
         </Link>
       </div>
