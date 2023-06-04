@@ -35,7 +35,7 @@ const ShowItem = ({ show }) => {
         <Link
           to="checkout"
           className="checkout-link"
-          state={{ price, selectedNumber }}
+          state={{ title, price, selectedNumber }}
         >
           Buy
         </Link>

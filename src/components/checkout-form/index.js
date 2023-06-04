@@ -3,7 +3,7 @@ import "./index.scss";
 
 const CheckoutForm = () => {
   const location = useLocation();
-  const { price, selectedNumber } = location.state;
+  const { title, price, selectedNumber } = location.state;
   const totalPrice = price * selectedNumber;
   const priceWithFees = Math.round((totalPrice + 44.08) * 100) / 100;
 
@@ -50,7 +50,10 @@ const CheckoutForm = () => {
           <h3>Total</h3>
           <h3>${priceWithFees}</h3>
         </div>
-        <h4>Tickets</h4>
+        <div className="value-container">
+          <h3>Tickets</h3>
+          <h3>{title}</h3>
+        </div>
         <div className="value-container">
           <span>
             Resale Tickets: ${price} x {selectedNumber}
